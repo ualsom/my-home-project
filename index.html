@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in South Korea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #1e8bf1;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .city-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .city-section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .filter-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+        .filter-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Places to Visit in South Korea</h1>
+    </header>
+    <div class="container">
+        <button class="filter-button" onclick="filterPlaces()">Show All</button>
+        <section class="city-section" id="seoul">
+            <h2>Seoul</h2>
+            <ul>
+                <li><strong>Gyeongbokgung Palace:</strong> A historic palace and popular tourist destination.</li>
+                <li><strong>N Seoul Tower:</strong> Offers panoramic views of the city from the top.</li>
+                <li><strong>Bukchon Hanok Village:</strong> Traditional Korean houses and a glimpse into the past.</li>
+                <li><strong>Myeongdong Shopping Street:</strong> A bustling area for shopping and street food.</li>
+            </ul>
+        </section>
+        <section class="city-section" id="busan">
+            <h2>Busan</h2>
+            <ul>
+                <li><strong>Haeundae Beach:</strong> Famous beach known for its beautiful sands and clear waters.</li>
+                <li><strong>Gamcheon Culture Village:</strong> A colorful, artistic neighborhood with unique architecture.</li>
+                <li><strong>Jagalchi Fish Market:</strong> Korea's largest seafood market with a wide variety of fresh seafood.</li>
+                <li><strong>Beomeosa Temple:</strong> A historic Buddhist temple set in the mountains.</li>
+            </ul>
+        </section>
+        <section class="city-section" id="ulsan">
+            <h2>Ulsan</h2>
+            <ul>
+                <li><strong>Jangsaengpo Whale Museum:</strong> A museum dedicated to whales and maritime history.</li>
+                <li><strong>Ulsan Grand Park:</strong> A large urban park perfect for outdoor activities and relaxation.</li>
+                <li><strong>Daewangam Park:</strong> A scenic coastal park with beautiful rock formations and views.</li>
+                <li><strong>Hyundai Motors Ulsan Plant:</strong> Tour the world’s largest automobile manufacturing plant.</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Places to Visit in South Korea</p>
+    </footer>
+    <script>
+        function filterPlaces() {
+            // This function will toggle the visibility of the city sections
+            var sections = document.querySelectorAll('.city-section');
+            sections.forEach(function(section) {
+                section.style.display = (section.style.display === 'none') ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
